@@ -795,26 +795,27 @@ transition: opacity 0.6s ease-out, filter 0.6s ease-out;
             <p class="leading-relaxed text-sm md:text-base font-normal text-[#EAE2D6]/60 text-left">We typically respond within 3-5 business days.</p>
           </div>
 
-          <form class="w-full">
+          <form class="w-full" action="https://formspree.io/f/xykkkrdl" method="POST">
+            <input type="hidden" name="_subject" value="New Brief — Early Traction">
             <!-- Band 1: Identity -->
             <div class="grid md:grid-cols-3 gap-8 mb-10 md:mb-12">
               <div class="group">
                 <label class="block uppercase text-xs font-bold text-[#FF1F1F] tracking-widest mb-2">
                   Name *
                 </label>
-                <input type="text" required="" class="placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors font-normal text-[#EAE2D6] bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pb-2" placeholder="John Doe">
+                <input type="text" required="" class="placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors font-normal text-[#EAE2D6] bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pb-2" placeholder="John Doe" name="name">
               </div>
               <div class="group">
                 <label class="block uppercase text-xs font-bold text-[#FF1F1F] tracking-widest mb-2">
                   Email *
                 </label>
-                <input type="email" required="" class="w-full bg-transparent border-b border-[#EAE2D6]/30 py-2 text-[#EAE2D6] font-normal placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors rounded-none" placeholder="john@example.com">
+                <input type="email" required="" class="w-full bg-transparent border-b border-[#EAE2D6]/30 py-2 text-[#EAE2D6] font-normal placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors rounded-none" placeholder="john@example.com" name="email">
               </div>
               <div class="group">
                 <label class="block uppercase text-xs font-bold text-[#FF1F1F] tracking-widest mb-2">
                   Brand/Company *
                 </label>
-                <input type="text" required="" class="w-full bg-transparent border-b border-[#EAE2D6]/30 py-2 text-[#EAE2D6] font-normal placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors rounded-none" placeholder="Acme Inc.">
+                <input type="text" required="" class="w-full bg-transparent border-b border-[#EAE2D6]/30 py-2 text-[#EAE2D6] font-normal placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors rounded-none" placeholder="Acme Inc." name="brand">
               </div>
             </div>
 
@@ -823,7 +824,7 @@ transition: opacity 0.6s ease-out, filter 0.6s ease-out;
               <label class="block uppercase text-xs font-bold text-[#FF1F1F] tracking-widest mb-2">
                 What are you launching? *
               </label>
-              <textarea required="" rows="4" class="placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors resize-none font-normal text-[#EAE2D6] bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b py-3" placeholder="Tell us about the project..."></textarea>
+              <textarea required="" rows="4" class="placeholder-[#EAE2D6]/30 focus:outline-none focus:border-[#EAE2D6] transition-colors resize-none font-normal text-[#EAE2D6] bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b py-3" placeholder="Tell us about the project..." name="project_description"></textarea>
             </div>
 
             <!-- Horizontal Separator -->
@@ -837,7 +838,7 @@ transition: opacity 0.6s ease-out, filter 0.6s ease-out;
                   Project Type *
                 </label>
                 <div class="relative">
-                  <select required="" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pr-8 pb-2">
+                  <select required="" name="project_type" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pr-8 pb-2">
                     <option value="" disabled="" selected="" class="bg-[#1a1a1a] text-[#EAE2D6]">
                       Select project type
                     </option>
@@ -866,7 +867,7 @@ transition: opacity 0.6s ease-out, filter 0.6s ease-out;
                   Timeline *
                 </label>
                 <div class="relative">
-                  <select required="" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pr-8 pb-2">
+                  <select required="" name="timeline" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pt-2 pr-8 pb-2">
                     <option value="" disabled="" selected="" class="bg-[#1a1a1a] text-[#EAE2D6]">
                       Select timeline
                     </option>
@@ -895,7 +896,7 @@ transition: opacity 0.6s ease-out, filter 0.6s ease-out;
                   Investment Stage *
                 </label>
                 <div class="relative">
-                  <select required="" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pr-8">
+                  <select required="" name="investment_stage" class="focus:outline-none focus:border-[#EAE2D6] transition-colors cursor-pointer font-normal text-[#EAE2D6]/90 bg-transparent w-full border-[#EAE2D6]/30 rounded-none border-b pr-8">
                     <option value="" disabled="" selected="" class="bg-[#1a1a1a] text-[#EAE2D6]">
                       Select stage
                     </option>
